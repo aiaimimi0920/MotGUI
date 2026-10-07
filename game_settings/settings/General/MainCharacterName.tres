@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dhhj7oewwxg46"]
+
+[ext_resource type="Script" path="res://game_settings/settings/General/MainCharacterName.gd" id="1_wb2yb"]
+
+[resource]
+resource_name = "MainCharacterName"
+script = ExtResource("1_wb2yb")
+current = "main_default"
+default = "main_default"
+name = "MainCharacterName"
+category = "General"
+value_type = 4
+value_hint = 0
+value_hint_string = ""
+show_visible = false
+show_name = "MainCharacterName"
+show_ui = 9

@@ -1,0 +1,21 @@
+extends BaseConfigManager
+
+func _init():
+	DIR_SAVE_FILE_DEFAULT = "user://main_settings.cfg"
+	DIR_SETTINGS_DEFAULT = "res://game_settings/settings"
+	super()
+
+var last_conversation_id:
+	get:
+		return get_value("General","LastConversationID","")
+	set(value):
+		set_value("General","LastConversationID",value)
+
+var main_character_name:
+	get:
+		return get_value("General","MainCharacterName","main_default")
+	set(value):
+		set_value("General","MainCharacterName",value)
+
+func get_ui_instance():
+	return null
